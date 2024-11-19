@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <style>
+    body {
+      font-family: serif;
+      margin: 0;
+      padding: 0;
+      font-size: 1.2rem;
+    }
+    img {
+      width: 400px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .img-container{
+      text-align: center;
+    }
+
+    main{
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    form{
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form textarea{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    form input[type="text"]{
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    form input[type="submit"]{
+      padding: 10px 20px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="img-container">
+      <img src="img/ITSON.png" alt="ITSON Logo">
+    </div>
+    
+  <p>
+    Introducción a la idea del prototipo<br>
+    Hola a todos, gracias por estar aquí. Hoy quiero compartir con ustedes un prototipo que hemos desarrollado para facilitar la organización y el registro de asesorías entre estudiantes y profesores.
+    El propósito principal de este prototipo es permitir que los alumnos puedan apartar asesorías en una hora específica según su disponibilidad y necesidades. La idea es hacer que el proceso sea sencillo, accesible y organizado, eliminando problemas como la falta de coordinación o la pérdida de tiempo al gestionar las asesorías manualmente.
+    Con este prototipo, los alumnos podrán:
+    <ol>
+      <li>Seleccionar una hora disponible para recibir asesoría.</li>
+      <li>Registrar la solicitud de manera estructurada, lo que permitirá un mejor control tanto para el alumno como para el profesor.</li>
+      <li>Facilitar el seguimiento de las asesorías, asegurando que las citas sean claras y respetadas.</li>
+    </ol>
+    Estamos aquí para mostrarles cómo funciona esta herramienta y, sobre todo, para escuchar sus opiniones sobre qué tan útil les resultaría en su día a día.
+  </p>
+  <h2>¿Que te parece? contesta unas preguntas</h2>
+  <form action="/submit" method="POST">
+    <label for="name">¿cual es tu nombre?</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="ease">¿Qué tan fácil o difícil te pareció apartar la asesoría?</label><br>
+    <textarea id="ease" name="ease" rows="3" required></textarea><br><br>
+
+    <label for="confusion">¿Hubo algo confuso o que no funcionara como esperabas?</label><br>
+    <textarea id="confusion" name="confusion" rows="3" required></textarea><br><br>
+
+    <label for="changes">¿Qué cambiarías o agregarías para que la herramienta sea más útil?</label><br>
+    <textarea id="changes" name="changes" rows="3" required></textarea><br><br>
+
+    <label for="future-use">Si necesitaras apartar asesorías regularmente, ¿usarías esta herramienta?</label><br>
+    <input type="radio" id="future-use-yes" name="future-use" value="yes" required>
+    <label for="future-use-yes">Sí</label><br>
+    <input type="radio" id="future-use-no" name="future-use" value="no" required>
+    <label for="future-use-no">No</label><br><br>
+
+    <label for="time">¿Cuánto tiempo crees que te tomaría apartar una asesoría en el futuro con esta herramienta?</label><br>
+    <input type="text" id="time" name="time" placeholder="Por ejemplo: 5 minutos" required><br><br>
+
+    <input type="submit" value="Enviar">
+  </form>
+  </main>
+  
+</body>
+</html>
+
