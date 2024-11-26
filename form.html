@@ -6,24 +6,13 @@
   <title>Formulario</title>
   <style>
     body {
-      font-family: serif;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       font-size: 1.2rem;
     }
-    img {
-      width: 400px;
-      height: auto;
-      margin-bottom: 20px;
-    }
     .img-container{
       text-align: center;
-    }
-
-    main{
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
     }
     form{
       width: 100%;
@@ -43,10 +32,54 @@
     form input[type="submit"]{
       padding: 10px 20px;
       width: 100%;
-      background-color: #4CAF50;
+      background-color: #0a5da6;
       color: white;
       border: none;
       cursor: pointer;
+      margin-bottom: 50px;
+    }
+    .elements-container{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+
+    }
+    .elements-container .element img{
+      width: 400px;
+      height: auto;
+
+    }
+    .element{
+      margin: 4rem 1.4rem ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .titulo-elemento span{
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+    .titulo-elemento{
+      width:  100%;
+    }
+    .element{
+      width: 500px;
+    }
+    .titulo-container{
+      text-align: center;
+    }
+    .text-conainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .text-conainer> div{
+      width: 70%;
+    }
+    .img-container img{
+      width: 400px;
     }
 
   </style>
@@ -54,22 +87,108 @@
 <body>
   <main>
     <div class="img-container">
-      <img src="img/ITSON.png" alt="ITSON Logo">
+      <img src="img/LogoITSON.png" alt="ITSON Logo">
     </div>
-    
-  <p>
-    Introducción a la idea del prototipo<br>
-    Hola a todos, gracias por estar aquí. Hoy quiero compartir con ustedes un prototipo que hemos desarrollado para facilitar la organización y el registro de asesorías entre estudiantes y profesores.
-    El propósito principal de este prototipo es permitir que los alumnos puedan apartar asesorías en una hora específica según su disponibilidad y necesidades. La idea es hacer que el proceso sea sencillo, accesible y organizado, eliminando problemas como la falta de coordinación o la pérdida de tiempo al gestionar las asesorías manualmente.
-    Con este prototipo, los alumnos podrán:
-    <ol>
-      <li>Seleccionar una hora disponible para recibir asesoría.</li>
-      <li>Registrar la solicitud de manera estructurada, lo que permitirá un mejor control tanto para el alumno como para el profesor.</li>
-      <li>Facilitar el seguimiento de las asesorías, asegurando que las citas sean claras y respetadas.</li>
-    </ol>
-    Estamos aquí para mostrarles cómo funciona esta herramienta y, sobre todo, para escuchar sus opiniones sobre qué tan útil les resultaría en su día a día.
-  </p>
-  <h2>¿Que te parece? contesta unas preguntas</h2>
+    <div class="prototipo-container">
+      <div class="titulo-container">
+        <h1>Prototipo de Asesorías Online</h1>
+      <p>Este prototipo fue diseñado para facilitar la organización y el registro de asesorías entre estudiantes y profesores.</p>
+
+      </div>
+      
+
+
+      <div class="elements-container">
+        <!--Pagina Iniciar Sesion del protoripo-->
+        <div class="element">
+
+          <div class="titulo-elemento">
+            <span>1.- Iniciar Sesión</span>
+          </div>
+          
+          <img src="img/inicioSesion.png" alt="Mockup de la lista de asesorías">
+          <div class="descripcionImagen">
+            <p>Visualiza y selecciona una hora disponible para recibir asesoría</p>
+          </div>
+        </div>
+        <!--Pagina principal del protoripo-->
+        <div class="element">
+
+          <div class="titulo-elemento">
+            <span>2.- Pagina Principal</span>
+          </div>
+          <img src="img/inicio.png" alt="Mockup de la herramienta">
+          <div class="descripcionImagen">
+            <p>Pagina principal de la Potros APP</p>
+          </div>
+        </div>
+
+        <!--Pagina Calendario-->
+        <div class="element">
+
+          <div class="titulo-elemento">
+            <span>3.- Pagina Calendario</span>
+          </div>
+          <img src="img/calendario.png" alt="Mockup de la herramienta">
+          <div class="descripcionImagen">
+            <p>Visualiza y selecciona una hora disponible para recibir asesoría</p>
+          </div>
+        </div>
+
+        <!--Pagina Apartar acesoria-->
+        <div class="element">
+
+          <div class="titulo-elemento">
+            <span>3.- Pagina Apartar accesoria</span>
+          </div>
+          <img src="img/apartarAsesoria.png" alt="Mockup de la herramienta">
+          <div class="descripcionImagen">
+            <p>Escoge la materia y la hora en la que quieras tener la accesoria.</p>
+          </div>
+        </div>
+
+        <!--Pagina Proponer horario-->
+        <div class="element">
+
+          <div class="titulo-elemento">
+            <span>4.- Pagina proponer hora</span>
+          </div>
+          <img src="img/proponerhorario.png" alt="Mockup de la herramienta">
+          <div class="descripcionImagen">
+            <p>Visualiza y selecciona una hora disponible para recibir asesoría</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  <div class="text-conainer">
+    <div class="Prototipo-clicleable">
+      <p>Para utilizar este prototipo, simplemente abra el siguiente enlace <a href="https://www.figma.com/proto/qtcazTOiEaKscTti2ob3ti/Problem%C3%A1tica-2%3A-Registro-de-asesor%C3%ADas-impartidas-profesor?node-id=0-1&t=oDNPDIqv265YVvw0-1">Protoripo clicleable</a></p>
+  
+    </div>
+    <div class="instrucciones-container">
+      <p>
+        Introducción a la idea del prototipo<br>
+        Hola a todos, gracias por estar aquí. Hoy quiero compartir con ustedes un prototipo que hemos desarrollado para facilitar la organización y el registro de asesorías entre estudiantes y profesores.
+        El propósito principal de este prototipo es permitir que los alumnos puedan apartar asesorías en una hora específica según su disponibilidad y necesidades. La idea es hacer que el proceso sea sencillo, accesible y organizado, eliminando problemas como la falta de coordinación o la pérdida de tiempo al gestionar las asesorías manualmente.
+        Con este prototipo, los alumnos podrán:
+        <ol>
+          <li>Seleccionar una hora disponible para recibir asesoría.</li>
+          <li>Registrar la solicitud de manera estructurada, lo que permitirá un mejor control tanto para el alumno como para el profesor.</li>
+          <li>Facilitar el seguimiento de las asesorías, asegurando que las citas sean claras y respetadas.</li>
+        </ol>
+        Estamos aquí para mostrarles cómo funciona esta herramienta y, sobre todo, para escuchar sus opiniones sobre qué tan útil les resultaría en su día a día.
+      </p>
+    </div>
+    <div class="FormularioTitulo">
+      <h2>¿Que te parece? contesta unas preguntas</h2>
+    </div>
+
+  </div>
+
+  
   <form action="/submit" method="POST">
     <label for="name">¿cual es tu nombre?</label><br>
     <input type="text" id="name" name="name" required><br><br>
